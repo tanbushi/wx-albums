@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{userInfo && !userInfo.name}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatar}}" mode="cover"></image>
+      <text class="userinfo-nickname">属于{{userInfo.name}}的个人相册</text>
+    </block>
+  </view>
+  <view  class="text">
+      <text decode="true">
+        &emsp;&emsp;学习ikcamp的简易相册的github上的开源项目而编写的个人简单相册，实现方式与开源项目相似，不同点是原来的ikcamp上传照片还需要用户有管理员权限登录后台管理页面审核照片，在这里面直接上传照片不需要审核就能上传成功
+      </text>
+  </view>
+</view>

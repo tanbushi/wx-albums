@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="head">
+    <image class='head-img' mode='scaleToFill' src="{{fc}}"></image>
+    <view class='head-tips'>
+      <view class="head-name">{{name}}</view>
+      <view class="head-nums">{{nums}}张照片</view>
+    </view>
+  </view>
+  <button class="btn" bindtap='upload'>上传照片</button>
+  <view class="list">
+    <view class="item" wx:for="{{pics}}">
+      <view class="time">{{item[0].created}}</view>
+      <view class="pics">
+          <image class="pic" wx:for="{{item}}" wx:for-item="item2" data-src="{{item2.url}}" src="{{item2.url}}" data-id="{{item2._id}}" wx:key="{{item2._id}}" bindtouchstart='touchStart' bindtouchend='touchEnd'></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+.container{
+  padding: 0;
+}
+
+.head{
+  position: relative;
+  height: 475rpx;
+  overflow: hidden;
+  margin-bottom: 60rpx;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.head-img{
+  height: 100%;
+  width: 100%;
+}
+
+.head-tips{
+  position: absolute;
+  left: 10rpx;
+  bottom: 10rpx;
+}
+
+.head-name{
+  font-size: 48rpx;
+  color: #fff;
+}
+
+.head-nums{
+  font-size: 28rpx;
+  color: #fffdfb;
+}
+
+.btn {
+  width: 80%;
+  border-radius: 8rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background: #33CCCC;
+  margin-bottom: 30rpx;
+}
+
+.item{
+  margin-bottom: 40rpx;
+}
+
+.time{
+  padding: 20rpx 0 40rpx 20rpx;
+}
+
+.pics{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: 236rpx;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.pic{
+  width: 230rpx;
+  height: 230rpx;
+  display: block;
+  margin: 9rpx;
+  box-shadow: 0 2rpx 8 rpx gray;
+}

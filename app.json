@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/album/album",
+    "pages/pics/pics"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33CCCC",
+    "navigationBarTitleText": "简单相册",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#33CCCC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "assets/self2.png",
+        "selectedIconPath": "assets/self1.png"
+      },
+      {
+        "pagePath": "pages/album/album",
+        "text": "相册",
+        "iconPath": "assets/pics2.png",
+        "selectedIconPath": "assets/pics1.png"
+      }
+    ]
+  }
+}

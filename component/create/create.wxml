@@ -1,0 +1,8 @@
+<!--component/create/create.wxml-->
+<view wx:if="{{!hidden}}" class="container">
+  <view class="names">
+    <input bindinput="handleInput" placeholder="添加相册名称" />
+  </view>
+  <button class="btn" bindtap='create'>创建相册</button>
+  <button class="back" bindtap='goBack'>返回</button>
+</view>
