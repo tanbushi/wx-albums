@@ -53,14 +53,13 @@
 .pics{
   display: flex;
   flex-wrap: wrap;
-  justify-content: 236rpx;
   align-items: center;
   padding: 0 10rpx;
 }
 
 .pic{
-  width: 230rpx;
-  height: 230rpx;
+  width: 225rpx;
+  height: 225rpx;
   display: block;
   margin: 9rpx;
   box-shadow: 0 2rpx 8 rpx gray;
