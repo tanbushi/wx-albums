@@ -8,7 +8,11 @@ module.exports = (mapStateToData = () => {}) => {
     observer () {
       const state = this.Store.getState();
       const newData = mapStateToData(state)
+      wx.showLoading({
+        title: 'loading',
+      })
       this.setData(newData);
+      wx.hideLoading()
     },
     onLoad () {
       super.onLoad();
