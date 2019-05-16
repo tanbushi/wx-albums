@@ -8,12 +8,6 @@ const mapStateToData = (state) => {
   }
 }
 Page(connect(mapStateToData)({
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   getUserInfo: function(e) {
     let userInfo = e.detail.userInfo;
     app.Store.dispatch({
